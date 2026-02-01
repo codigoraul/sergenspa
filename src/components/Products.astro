@@ -1,0 +1,81 @@
+---
+const products = [
+  {
+    title: "Separadores de Hormigón",
+    image: "/images/productos/separadores-de-hormigon.jpg",
+    description: "Separadores Prefabricados de Hormigón especializados para aplicaciones de hormigón."
+  },
+  {
+    title: "Placa Calibradora piping.",
+    image: "/images/productos/b2.jpg",
+    description: "Placa Calibradora piping especializada para aplicaciones de piping."
+  },
+
+  {
+    title: "Revestimientos Industriales",
+    image: "/images/productos/b3.jpg",
+    description: "Revestimientos Industriales especiales para ambientes corrosivos y salinos."
+  },
+
+  {
+    title: "Sensor de madurez para el hormigón",
+    image: "/images/productos/b4.jpg",
+    description: "Sensores de temperatura y resistencia para control de hormigón."
+  },
+  {
+    title: "Morteros de alta resistencia,",
+    image: "/images/productos/b5.jpg",
+    description: "Morteros de alta calidad para reparaciones y construcción."
+  }
+  ,
+  {
+    title: "Productos de seguridad industrial",
+    image: "/images/productos/b6.jpg",
+    description: "Articulos de seguridad industrial de diversos usos para protección y seguridad."
+  }
+];
+---
+
+<section id="productos" class="py-20 bg-white">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-bold text-title mb-4" style="font-size: 2.2em;">Nuestros Productos</h2>
+        <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-xl text-paragraph max-w-3xl mx-auto">
+          Fabricación y venta de productos especializados para la industria
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.map((product) => (
+          <div class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+            <div class="relative h-40 overflow-hidden bg-gray-100">
+              <img 
+                src={product.image} 
+                alt={product.title}
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-bold text-title mb-2 group-hover:text-primary transition-colors">{product.title}</h3>
+              <p class="text-paragraph text-sm leading-relaxed">{product.description}</p>
+            </div>
+            <div class="px-5 pb-5">
+              <button class="w-full bg-gray-100 hover:bg-primary hover:text-white text-title font-semibold py-2 rounded-lg transition-all duration-300 text-sm">
+                Consultar
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="#contacto" class="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+          Solicitar Catálogo de Productos
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

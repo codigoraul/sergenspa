@@ -1,0 +1,289 @@
+---
+const services = [
+  {
+     title: "Premoldeados de Hormigón",
+    image: "/images/productos/prefabricados-de-hormigon.jpg",
+    description: "Fabricación de elementos prefabricados de hormigón para construcción industrial.",
+      features: [
+      "Fabricación de elementos prefabricados de hormigón para construcción industrial.",
+      ]
+  },
+  {
+    title: " Piezas especiales Piping",
+    image: "/images/productos/piezas-de-piping.jpg",
+    description: "Fabricación de piezas especializadas para sistemas de tuberías.",
+    features: [
+      "Bridas, flanges, piezas a pedido",
+    ]
+  },
+   {
+    title: "Válvulas Industriales",
+    image: "/images/productos/a3.jpg",
+    description: "Válvulas industriales para sistemas de alta presión.",
+    features: [
+      "De bola, compuerta, guillotina, etc",
+    ]
+  },
+  {
+    title: "Herramientas de Limpieza",
+    image: "/images/productos/a4.jpg",
+    description: "Herramientas especializadas para limpieza de cañerías.",
+    features: [
+      "Productos para pruebas y limpieza.",
+    ]
+  },
+
+  {
+    title: "FabricaciónEstructura Metálica ",
+    image: "images/productos/a5.jpg",
+    description: "Fabricación de estructuras metálicas menores para proyectos industriales.",
+    features: [
+      "Fabricación de estructuras metálicas menores para proyectos industriales.",
+    ]
+  },
+  {
+    title: "Preparación de equipos con estándar minero",
+    image: "images/productos/a6.jpg",
+    description: "Preparación de equipos con estándar minero.",
+    features: [
+      "Preparamos equipos, camiones, maquinarias con estándar minero según necesidad de la campañia"
+    ]
+  }
+
+  
+];
+
+const serviciosAdicionales = [
+  {
+    title: "Pruebas Hidrostáticas",
+    image: "/images/productos/c1.jpg",
+    description: "Para piping, estanques y pipelines; con instrumentación calibrada, manifolds y procedimientos certificados.",
+    features: [
+      "Pruebas de sistemas de tuberías y estanques",
+      "Instrumentación calibrada y certificada",
+      "Manifolds de limpieza y presurización",
+      "Procedimientos conforme a códigos de diseño"
+    ]
+  },
+  {
+    title: "Aplicaciones de Poliuretano",
+    image: "/images/productos/c2.jpg",
+    description: "Diques para control de erosión, anclaje de tuberías en pendientes y protección anticorrosiva/abrasiva.",
+    features: [
+      "Diques de poliuretano para control de erosión",
+      "Anclaje de tuberías en altas pendientes",
+      "Protección contra corrosión y abrasión",
+      "Ideal para lugares de difícil acceso"
+    ]
+  },
+  {
+    title: "Arriendo de Equipos",
+    image: "/images/productos/c3.jpg",
+    description: "Camiones pipeliner, motosoldadoras, tiendetubos, excavadoras, etc.",
+    features: [
+      "Camiones pipeliner",
+      "Motosoldadoras",
+      "Tiendetubos",
+      "Excavadoras, etc."
+    ]
+  }
+];
+
+const fabricacionSuministros = [
+  {
+    title: "Prefabricados de Hormigón",
+    image: "/images/productos/prefabricados-de-hormigon.jpg",
+    description: "Fabricación de elementos prefabricados de hormigón para construcción industrial.",
+    features: [
+      "Elementos prefabricados de alta calidad",
+      "Para construcción industrial"
+    ]
+  },
+  {
+    title: "Fabricación de Estructura Metálica",
+    image: "/images/productos/estructura-metalica.jpg",
+    description: "Fabricación de estructuras metálicas para proyectos industriales.",
+    features: [
+      "Estructuras metálicas a medida",
+      "Proyectos industriales"
+    ]
+  },
+  {
+    title: "Fabricación de Piezas Especiales Piping",
+    image: "/images/productos/piezas-de-piping.jpg",
+    description: "Fabricación de piezas especializadas para sistemas de tuberías.",
+    features: [
+      "Bridas, flanges",
+      "Piezas a pedido"
+    ]
+  },
+  {
+    title: "Fabricación de Válvulas Industriales",
+    image: "/images/productos/valvulas-industriales.jpg",
+    description: "Válvulas industriales para sistemas de alta presión.",
+    features: [
+      "De bola, compuerta, guillotina",
+      "Alta presión"
+    ]
+  },
+  {
+    title: "Venta de Productos y Materiales para la Industria",
+    image: "/images/productos/venta-productos.jpg",
+    description: "Venta de productos y materiales para la industria.",
+    features: [
+      "Productos industriales",
+      "Materiales de calidad"
+    ]
+  }
+];
+---
+
+<section id="servicios" class="py-20 bg-gray-light">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-bold text-title mb-4" style="font-size: 2.2em;">Nuestros Servicios de Fabricación</h2>
+        <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-xl text-paragraph max-w-3xl mx-auto">
+          Ofrecemos soluciones integrales para proyectos industriales con los más altos estándares de calidad
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {services.map((service) => (
+          <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src={service.image} 
+                alt={service.title}
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-xl font-bold text-white drop-shadow-lg">{service.title}</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-paragraph mb-6 leading-relaxed text-sm">{service.description}</p>
+              <ul class="space-y-2.5">
+                {service.features.map((feature) => (
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-paragraph text-sm">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="px-6 pb-6">
+              <button class="w-full bg-primary/5 hover:bg-primary hover:text-white text-primary font-semibold py-3 rounded-lg transition-all duration-300 border border-primary/20 hover:border-primary">
+                Más Información
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- SECCIÓN: NUESTROS SERVICIOS -->
+      <div id="nuestros-servicios" class="text-center mb-16 mt-20">
+        <h2 class="font-bold text-title mb-4" style="font-size: 2.2em;">Nuestros Servicios</h2>
+        <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-xl text-paragraph max-w-3xl mx-auto">
+          Servicios especializados para la industria
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {serviciosAdicionales.map((service) => (
+          <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src={service.image} 
+                alt={service.title}
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-xl font-bold text-white drop-shadow-lg">{service.title}</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-paragraph mb-6 leading-relaxed text-sm">{service.description}</p>
+              <ul class="space-y-2.5">
+                {service.features.map((feature) => (
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-paragraph text-sm">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="px-6 pb-6">
+              <button class="w-full bg-primary/5 hover:bg-primary hover:text-white text-primary font-semibold py-3 rounded-lg transition-all duration-300 border border-primary/20 hover:border-primary">
+                Más Información
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- SECCIÓN: FABRICACIÓN Y SUMINISTROS -->
+      <div id="fabricacion-suministros" class="text-center mb-16 mt-20">
+        <h2 class="font-bold text-title mb-4" style="font-size: 2.2em;">Fabricación y Suministros</h2>
+        <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+        <p class="text-xl text-paragraph max-w-3xl mx-auto">
+          Capacidades de fabricación y venta de productos industriales
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {fabricacionSuministros.map((service) => (
+          <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="relative h-48 overflow-hidden">
+              <img 
+                src={service.image} 
+                alt={service.title}
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <h3 class="text-xl font-bold text-white drop-shadow-lg">{service.title}</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-paragraph mb-6 leading-relaxed text-sm">{service.description}</p>
+              <ul class="space-y-2.5">
+                {service.features.map((feature) => (
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-paragraph text-sm">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div class="px-6 pb-6">
+              <button class="w-full bg-primary/5 hover:bg-primary hover:text-white text-primary font-semibold py-3 rounded-lg transition-all duration-300 border border-primary/20 hover:border-primary">
+                Más Información
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-16 bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-8 md:p-12 text-white text-center">
+        <h3 class="text-3xl font-bold mb-4">¿Necesitas una solución personalizada?</h3>
+        <p class="text-xl mb-8 text-white/90">
+          Contáctanos y conversemos sobre tu proyecto. Tenemos la experiencia y capacidad para resolver tus desafíos.
+        </p>
+        <a href="#contacto" class="inline-block bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+          Solicitar Cotización
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

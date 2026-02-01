@@ -1,0 +1,103 @@
+# build output
+dist/
+.output/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Astro
+.astro/
+
+# otros proyectos y carpetas hermanas
+Landing Protrabajo.cl/
+MI PROPIA WEB/
+benimelis & Cia/
+emcl.cl/
+grupoGluscevic/
+landingpromocion/
+nelparts/
+sitio legaldatos.cl/
+viman.cl/
+web pablo camisetas/
+plugin/
+presupuesto 2026/
+presupuestos 2025/
+revision diseñopaginas/
+themes/
+tutorial graph ql /
+web poleras/
+PROSALR EDITABLE (1).pdf
+Premium Discusión con un agente inmobiliario*
+Taller 2 Uso y Mantencion Icuadra.pdf
+WC400*.pdf
+Web Design Process*
+WhatsApp Image*.jpeg
+YITH*.zip
+astra-addon/
+banner-home.jpg
+carnet-tianena.jpeg
+certificado-*.pdf
+cita_agendada.ics
+css/
+cuentas.ai
+descargas pluginpress*/
+dicore.cl_*/
+diplomaDiseño.JPG
+elementor-pro/
+fetch-api/
+files*.zip
+files/
+google-ai-essentials*
+google9e922d196bc3305a.html
+inmobiliaria-elquicapital.jpg
+lavamanos modern.jpeg
+librosPdf/
+localhost_wpvivid*
+logo*.png
+logo*.jpg
+nosotros-elquicapital*.jpg
+pres-web-*.pdf
+pruebaDomestika.xd
+receta_dudasteride.jpg
+slider-2.jpg
+teoria color domestik.xd
+the-basics-of-ux-design.pdf
+trabajosSitio web*.ai
+trabajosSitio web*.pdf
+videoCasa/
+yith-*/
+Google Drive*/
+Library/
+Local Sites/
+Movies/
+Music/
+Pictures/
+Public/
+astroblog/
+blogAstro/
+content-collections/
+db.json
+disenopaginas-astro/
+iCloud Drive*/
+iMyTrans/
+nuevo-proyecto/
+nuevoPropie/
+react-router-ejemplo/
+reat-es/
