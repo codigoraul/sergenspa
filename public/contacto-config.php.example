@@ -1,0 +1,11 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+  'BASE_PATH' => '',
+  'SITE_URL' => 'https://sergenspa.cl',
+  'TO_EMAIL' => 'contacto@sergenspa.cl, contacto@sgn.cl',
+  'FROM_EMAIL' => 'contacto@sergenspa.cl',
+  'FROM_NAME' => 'SERGEN',
+];
