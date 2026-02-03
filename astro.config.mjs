@@ -8,4 +8,6 @@ export default defineConfig({
     assets: '_astro',
   },
   trailingSlash: 'ignore',
+  output: 'static',
+  base: '/sergenspa/',
 });
