@@ -9,5 +9,5 @@ export default defineConfig({
   },
   trailingSlash: 'ignore',
   output: 'static',
-  base: '/sergenspa/',
+  base: '/prueba/',
 });
