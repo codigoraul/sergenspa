@@ -89,53 +89,7 @@ const serviciosAdicionales = [
   }
 ];
 
-const fabricacionSuministros = [
-  {
-    title: "Prefabricados de Hormigón",
-    image: "/images/productos/prefabricados-de-hormigon.jpg",
-    description: "Fabricación de elementos prefabricados de hormigón para construcción industrial.",
-    features: [
-      "Elementos prefabricados de alta calidad",
-      "Para construcción industrial"
-    ]
-  },
-  {
-    title: "Fabricación de Estructura Metálica",
-    image: "/images/productos/estructura-metalica.jpg",
-    description: "Fabricación de estructuras metálicas para proyectos industriales.",
-    features: [
-      "Estructuras metálicas a medida",
-      "Proyectos industriales"
-    ]
-  },
-  {
-    title: "Fabricación de Piezas Especiales Piping",
-    image: "/images/productos/piezas-de-piping.jpg",
-    description: "Fabricación de piezas especializadas para sistemas de tuberías.",
-    features: [
-      "Bridas, flanges",
-      "Piezas a pedido"
-    ]
-  },
-  {
-    title: "Fabricación de Válvulas Industriales",
-    image: "/images/productos/valvulas-industriales.jpg",
-    description: "Válvulas industriales para sistemas de alta presión.",
-    features: [
-      "De bola, compuerta, guillotina",
-      "Alta presión"
-    ]
-  },
-  {
-    title: "Venta de Productos y Materiales para la Industria",
-    image: "/images/productos/venta-productos.jpg",
-    description: "Venta de productos y materiales para la industria.",
-    features: [
-      "Productos industriales",
-      "Materiales de calidad"
-    ]
-  }
-];
+
 ---
 
 <section id="servicios" class="py-20 bg-gray-light">
@@ -230,50 +184,7 @@ const fabricacionSuministros = [
         ))}
       </div>
 
-      <!-- SECCIÓN: FABRICACIÓN Y SUMINISTROS -->
-      <div id="fabricacion-suministros" class="text-center mb-16 mt-20">
-        <h2 class="font-bold text-title mb-4" style="font-size: 2.2em;">Fabricación y Suministros</h2>
-        <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-        <p class="text-xl text-paragraph max-w-3xl mx-auto">
-          Capacidades de fabricación y venta de productos industriales
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-        {fabricacionSuministros.map((service) => (
-          <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div class="relative h-48 overflow-hidden">
-              <img 
-                src={service.image} 
-                alt={service.title}
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <div class="absolute bottom-4 left-4 right-4">
-                <h3 class="text-xl font-bold text-white drop-shadow-lg">{service.title}</h3>
-              </div>
-            </div>
-            <div class="p-6">
-              <p class="text-paragraph mb-6 leading-relaxed text-sm">{service.description}</p>
-              <ul class="space-y-2.5">
-                {service.features.map((feature) => (
-                  <li class="flex items-start">
-                    <svg class="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="text-paragraph text-sm">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div class="px-6 pb-6">
-              <button class="w-full bg-primary/5 hover:bg-primary hover:text-white text-primary font-semibold py-3 rounded-lg transition-all duration-300 border border-primary/20 hover:border-primary">
-                Más Información
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
+      
 
       <div class="mt-16 bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-8 md:p-12 text-white text-center">
         <h3 class="text-3xl font-bold mb-4">¿Necesitas una solución personalizada?</h3>
